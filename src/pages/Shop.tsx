@@ -15,7 +15,7 @@ const Shop = () => {
       <div className="container mx-auto  px-5">
         <div className=" grid grid-cols-1 gap-6 md:grid-cols-3">
           {products.map((product) => (
-            <ProductsCard {...product} />
+            <ProductsCard key={product.id} {...product} />
           ))}
         </div>
       </div>
